@@ -9,6 +9,10 @@
 
 A proof-of-concept tool for generating payloads that exploit unsafe .NET object deserialization.
 
+
+
+run workflow
+
 ## Description
 ysoserial.net is a collection of utilities and property-oriented programming "gadget chains" discovered in common .NET libraries that can, under the right conditions, exploit .NET applications performing unsafe deserialization of objects. The main driver program takes a user-specified command and wraps it in the user-specified gadget chain, then serializes these objects to stdout. When an application with the required gadgets on the classpath unsafely deserializes this data, the chain will automatically be invoked and cause the command to be executed on the application host.
 
